@@ -5,7 +5,7 @@ import Modal from './components/Modal';
 import Filters from './components/Filters';
 
 
-const API_KEY = '20176b1bf94a4d988b7583c7412c9264';
+const API_KEY = process.env.REACT_APP_SPOONACULAR_API_KEY;
 
 function App() {
   const [query, setQuery] = useState('');
